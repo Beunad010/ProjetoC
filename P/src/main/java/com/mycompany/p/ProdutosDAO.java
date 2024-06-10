@@ -1,4 +1,4 @@
-import java.sql.;
+import java.sql.*;
 import javax.swing.JOptionPane;
 import java.util.ArrayList;
 
@@ -30,7 +30,7 @@ public class ProdutosDAO {
         conn = new ConectaDAO().connectDB();
 
         try {
-            String query = "SELECT FROM produtos";
+            String query = "SELECT * FROM produtos";
             prep = conn.prepareStatement(query);
             resultSet = prep.executeQuery();
 
